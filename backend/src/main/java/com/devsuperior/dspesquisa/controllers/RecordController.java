@@ -1,7 +1,6 @@
 package com.devsuperior.dspesquisa.controllers;
 
 import java.time.Instant;
-import java.util.List;
 
 import com.devsuperior.dspesquisa.dto.RecordDTO;
 import com.devsuperior.dspesquisa.dto.RecordInsertDTO;

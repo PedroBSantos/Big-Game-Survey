@@ -1,8 +1,6 @@
 package com.devsuperior.dspesquisa.services;
 
 import java.time.Instant;
-import java.util.List;
-import java.util.stream.Collectors;
 
 import com.devsuperior.dspesquisa.dto.RecordDTO;
 import com.devsuperior.dspesquisa.dto.RecordInsertDTO;
