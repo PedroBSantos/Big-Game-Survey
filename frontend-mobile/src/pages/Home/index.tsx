@@ -1,35 +1,45 @@
-import React from 'react'
-import { StyleSheet, Text, View, Image, Alert } from 'react-native'
-import { RectButton } from 'react-native-gesture-handler'
-import {FontAwesome5 as Icon} from "@expo/vector-icons"
+import React from "react";
+import { StyleSheet, Text, View, Image, Alert } from "react-native";
+import { RectButton } from "react-native-gesture-handler";
+import { FontAwesome5 as Icon } from "@expo/vector-icons";
+import Header from "../../components/Header";
+import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
-    const handleOnPress = () => {
-
-    }
-    return (
-        <>
-            <View style={styles.container}>
-                <Image
-                    source={require("../../assets/gamer.png")}
-                    style={styles.gamerImage}
-                ></Image>
-                <Text style={styles.title}>Vote agora!</Text>
-                <Text style={styles.subTitle}>Nos diga qual é seu jogo favorito!</Text>
-            </View>
-            <View style={styles.footer}>
-                <RectButton style={styles.button} onPress={handleOnPress}>
-                    <Text style={styles.buttonText}>COLETAR DADOS</Text>
-                    <View style={styles.buttonIcon}>
-                        <Text>
-                            <Icon name="chevron-right" color="#fff" size={25}></Icon>
-                        </Text>
-                    </View>
-                </RectButton>
-            </View>
-        </>
+	const navigation = useNavigation();
+	const handleOnPress = () => {
+		navigation.navigate("CreateRecord");
+	};
+	return (
+		<>
+			<Header />
+			<View style={styles.container}>
+				<Image
+					source={require("../../assets/gamer.png")}
+					style={styles.gamerImage}
+				></Image>
+				<Text style={styles.title}>Vote agora!</Text>
+				<Text style={styles.subTitle}>
+					Nos diga qual é seu jogo favorito!
+				</Text>
+			</View>
+			<View style={styles.footer}>
+				<RectButton style={styles.button} onPress={handleOnPress}>
+					<Text style={styles.buttonText}>COLETAR DADOS</Text>
+					<View style={styles.buttonIcon}>
+						<Text>
+							<Icon
+								name="chevron-right"
+								color="#fff"
+								size={25}
+							></Icon>
+						</Text>
+					</View>
+				</RectButton>
+			</View>
+		</>
 	);
-}
+};
 
 const styles = StyleSheet.create({
 	container: {
