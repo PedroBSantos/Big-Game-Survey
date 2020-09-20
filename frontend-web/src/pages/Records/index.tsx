@@ -6,7 +6,7 @@ import Pagination from "./pagination";
 import "./style.css";
 import { RecordsResponse } from "./types";
 
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://sds1-pedro.herokuapp.com";
 
 const Records = () => {
 	let [recordsResponse, setRecordsResponse] = useState<RecordsResponse>();
