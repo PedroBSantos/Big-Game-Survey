@@ -1,9 +1,9 @@
-import React from "react";
-import { StyleSheet, Text, View, Image, Alert } from "react-native";
-import { RectButton } from "react-native-gesture-handler";
 import { FontAwesome5 as Icon } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
+import React from "react";
+import { Image, StyleSheet, Text, View } from "react-native";
+import { RectButton } from "react-native-gesture-handler";
 import Header from "../../components/Header";
-import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
 	const navigation = useNavigation();

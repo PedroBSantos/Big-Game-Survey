@@ -1,12 +1,13 @@
 import {
 	Play_400Regular,
-	Play_700Bold, useFonts
+	Play_700Bold,
+	useFonts,
 } from "@expo-google-fonts/play";
 import { AppLoading } from "expo";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import Routes from './src/Routes';
+import Routes from "./src/Routes";
 
 export default function App() {
 	const [fontsLoaded] = useFonts({
@@ -19,7 +20,7 @@ export default function App() {
 	} else {
 		return (
 			<View style={styles.container}>
-                <Routes></Routes>
+				<Routes></Routes>
 				<StatusBar style="light" />
 			</View>
 		);
