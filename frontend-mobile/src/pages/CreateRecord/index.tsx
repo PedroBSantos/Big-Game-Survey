@@ -13,7 +13,7 @@ const placeholder = {
 	value: null,
 };
 
-const BASE_URL = "http://192.168.0.2:8080";
+const BASE_URL = "https://sds1-pedro.herokuapp.com";
 
 const mapSelectValues = (games: Game[]) => {
 	return games.map((game) => ({
@@ -191,7 +191,7 @@ const styles = StyleSheet.create({
 		justifyContent: "space-between",
 	},
 	footer: {
-		marginTop: "15%",
+		marginTop: "7%",
 		alignItems: "center",
 	},
 	button: {

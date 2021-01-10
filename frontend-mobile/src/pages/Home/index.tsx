@@ -53,9 +53,9 @@ const styles = StyleSheet.create({
 	},
 	title: {
 		color: "#00D4FF",
-		fontSize: 36,
+		fontSize: 26,
 		fontWeight: "bold",
-		marginTop: 31,
+		marginTop: 10,
 		fontFamily: "Play_700Bold",
 	},
 	subTitle: {
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
 		fontFamily: "Play_400Regular",
 	},
 	footer: {
-		marginTop: "15%",
+		marginTop: "10%",
 		alignItems: "center",
 	},
 	button: {
